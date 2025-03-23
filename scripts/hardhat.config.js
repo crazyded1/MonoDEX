@@ -2,12 +2,17 @@ require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
 module.exports = {
-  solidity: "0.8.19", // Версия компилятора Solidity
+  solidity: {
+    compilers: [
+      { version: "0.8.19" },
+      { version: "0.8.28" } // Добавляем поддержку 0.8.28
+    ]
+  },
   networks: {
     monad: {
-      url: "https://testnet-rpc.monad.xyz", // RPC URL для сети Monad
-      accounts: [process.env.PRIVATE_KEY], // Приватный ключ из .env
-      chainId: 2001, // ID сети Monad
+      url: "https://testnet-rpc.monad.xyz",
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 2001,
     },
   },
 };

@@ -11,7 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.19"
+    "hardhat": "^2.22.19",
+    "solc": "^0.8.28"
   },
   "directories": {
     "test": "test"
@@ -106,6 +107,7 @@
     "diff": "^5.2.0",
     "difflib": "^0.2.4",
     "dir-glob": "^3.0.1",
+    "dotenv": "^16.4.7",
     "dunder-proto": "^1.0.1",
     "elliptic": "^6.6.1",
     "emoji-regex": "^8.0.0",
@@ -307,7 +309,6 @@
     "sisteransi": "^1.0.5",
     "slash": "^3.0.0",
     "slice-ansi": "^4.0.0",
-    "solc": "^0.8.26",
     "solidity-coverage": "^0.8.14",
     "source-map": "^0.6.1",
     "source-map-support": "^0.5.21",
