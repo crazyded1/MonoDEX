@@ -1,16 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MonoDex DApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoDEX DApp</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Welcome to MonoDex!</h1>
+<body class="bg-gray-100">
+<div class="container mx-auto px-4 py-6">
+    <h1 class="text-3xl font-bold mb-4">MonoDEX 🚀</h1>
 
-  <button id="connectButton">Connect Wallet</button>
+    <button id="connectWallet" class="bg-blue-500 text-white px-4 py-2 rounded">Connect Wallet</button>
+    <p id="walletAddress" class="my-2"></p>
 
-  <script src="https://cdn.jsdelivr.net/npm/ethers@5.4.5/dist/ethers.umd.min.js"></script>
-  <script src="app.js"></script>
+    <div class="my-6">
+        <h2 class="text-2xl">Limit Orders</h2>
+        <input type="number" id="orderAmount" placeholder="Amount" class="border px-2 py-1">
+        <input type="number" id="orderPrice" placeholder="Price" class="border px-2 py-1">
+        <button id="placeOrder" class="bg-green-500 text-white px-4 py-2 rounded">Place Order</button>
+    </div>
+
+    <div class="my-6">
+        <h2 class="text-2xl">Execute Order</h2>
+        <input type="number" id="executeOrderId" placeholder="Order ID" class="border px-2 py-1">
+        <button id="executeOrder" class="bg-purple-500 text-white px-4 py-2 rounded">Execute Order</button>
+    </div>
+
+    <div class="my-6">
+        <h2 class="text-2xl">Withdraw Funds</h2>
+        <button id="withdraw" class="bg-red-500 text-white px-4 py-2 rounded">Withdraw</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
