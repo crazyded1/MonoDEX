@@ -1,4 +1,4 @@
-# 🧬 MonoDEX — Uniswap v3 Fork on Monad
+# 🧬 MonoDEX
 
 **MonoDEX** is a decentralized exchange built on the Monad blockchain, based on a customized fork of Uniswap v3. This project includes both smart contracts and a basic frontend for testing and interaction.
 
@@ -75,4 +75,4 @@ Open an issue or PR if you'd like to collaborate or provide suggestions!
 
 ## 📬 Contact
 
-Feel free to reach out via GitHub or [Telegram/X/...].
+Feel free to reach out via GitHub 
